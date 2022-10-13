@@ -1,5 +1,8 @@
 import 'dart:ui';
+
 import 'app_theme.dart';
+import 'package:flutter_base/import.dart';
+import 'package:flutter/material.dart';
 
 class AppTextStyle {
   static final AppTextStyle share = AppTextStyle();

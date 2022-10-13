@@ -9,15 +9,15 @@ double designScreenWidth = 375;
 
 extension DimensionExtension on num {
   double get getWidth {
-    final double height = MediaQuery.of(Get.context!).size.width;
+    final double height = Get.height;
     if (this < 0.0 || this > 1.0) {
       return 1 * height;
     }
-    return this * MediaQuery.of(Get.context!).size.width;
+    return this * Get.height.width;
   }
 
   double get getHeight {
-    final double height = MediaQuery.of(Get.context!).size.height;
+    final double height = Get.height;
     if (this < 0.0 || this > 1.0) {
       return 1 * height;
     }

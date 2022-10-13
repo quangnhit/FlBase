@@ -291,16 +291,16 @@ class ConvertHelper {
     if (text.isEmpty) {
       return text;
     }
-
-    final List<String> chars = text.characters.toList();
-    for (int i = 0; i < chars.length; i++) {
-      for (int j = 0; j < _accentChars.length; j++) {
-        if (chars[i] == _accentChars[j]) {
-          chars[i] = _normalChars[j];
-          break;
-        }
-      }
-    }
-    return chars.join().replaceAll(RegExp(r'[^\w\s]+'), '');
+    return text;
+    // final List<String> chars = text.characters.toList();
+    // for (int i = 0; i < chars.length; i++) {
+    //   for (int j = 0; j < _accentChars.length; j++) {
+    //     if (chars[i] == _accentChars[j]) {
+    //       chars[i] = _normalChars[j];
+    //       break;
+    //     }
+    //   }
+    // }
+    // return chars.join().replaceAll(RegExp(r'[^\w\s]+'), '');
   }
 }
